@@ -19,12 +19,32 @@
                    
                             <div class="total-price-div">
                         <h3 class="total"> Total price </h3>
-                        <h3 class="total-price">20</h3>
+                        <h3 class="total-price" id="total-price">$</h3>
                             </div>
                             <div class="complete-div">
-                                <button class="complete">Complete order</button>
+                                <button class="complete" id="complete">Complete order</button>
                      </div>
             </section>
+            <div class="modal" id="modal">
+                    <button id="close-modal">x</button>
+                    <h4>Enter card details</h4>
+                    <form id="form">
+                        <div id="inputs-div" class="inputs-div">
+                            <input type=text class="inputs" id="input-name" placeholder="Enter your name" required>
+                            <input type=text class="inputs" id="input-number" placeholder="Enter card number" required>
+                            <input type=text class="inputs" id="input-cvv" placeholder="Enter CVV" required>
+                        </div>
+                        <div class="modal-button" id="modal-button"> 
+                            <button 
+                            type="submit" 
+                            id="submit-button" 
+                            class="submit-button"
+                            >Pay</button>
+                        </div>
+                </form>
+            </div>
+            <div id="order-confirmed" class="order-confirmed"></div>
+            
             
     
 	<script src="index.js" type="module"></script>
