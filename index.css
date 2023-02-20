@@ -1,0 +1,234 @@
+body {
+    margin: 0;
+    font-family: 'Smythe';
+    font-style: normal;
+    width: 600px;
+} 
+
+/* header */
+
+header {
+    background-image: url(https://images.unsplash.com/photo-1616645500344-209060c84970?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MXx8fGVufDB8fHx8&w=1000&q=80);
+    background-size: 100%;
+    background-position: center;
+    margin-bottom: 50px;
+    
+    
+}
+
+h1 {
+
+font-family: 'Smythe';
+font-style: normal;
+font-weight: 400;
+font-size: 39px;
+line-height: 24px;
+
+text-align: start;
+padding: 50px 0 0 36px;
+color: #FFFFFF;
+
+}
+
+h2 {
+    text-align: start;
+    padding: 0 0 50px 36px;  
+
+    font-family: 'Smythe';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22.4216px;
+    
+
+
+    color: #FFFFFF;
+
+
+}
+
+/* main */
+
+.container {
+    
+    width: 510px;
+    display: flex;
+    border-bottom: 1px solid #D2D2D2;
+    padding: 51px 0 51px 36px;
+    align-items: center;
+    position: relative;
+    margin: 0 auto;
+}
+
+.food-emoji {
+    font-size: 78.72px;
+    margin: auto 0px;
+    
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+         
+}
+
+
+.button-div {
+    position: absolute;
+    right: 20px;
+    border: none;    
+}
+
+.add-button {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 32px;
+    line-height: 24px;
+    border-radius: 50%;
+    border: 1.5px solid #DEDEDE;
+    padding: 10px 15px;
+    
+}
+
+
+p {
+    margin: 7px 0 ;
+}
+
+/* typography */
+
+p {
+    margin: 7px 0 ;
+}
+
+.name {
+    
+    
+    font-size: 28px;
+    line-height: 17px;
+}
+
+.ingredient {
+    color:  #8B8B8B;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.price {
+    font-size: 20px;
+    line-height: 24px;
+}
+
+/* order section */
+
+.order-section {
+    /*display: none;*/
+}
+
+.your-order {
+    text-align: center;
+    margin: 100px 0 100px 0;
+        
+    font-family: 'Smythe';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 17px;
+    color: #000000;
+
+}
+
+.order-list {
+    
+    font-family: 'Smythe';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 17px;
+    color: #000000;
+    
+    margin: 18px;
+
+}
+
+
+
+.order-list-div {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 36px;
+}
+
+.item-price {
+    position: absolute;
+    right: 50px;
+    font-family: 'Smythe';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 24px;
+
+    color: #0E0E0E;
+}
+
+.total-price-div {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #000000;
+    margin: 0 20px 0 20px;
+    padding-left: 36px;
+}
+
+.total-price {
+    margin-right: 29px;
+    font-family: 'Smythe';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 24px;
+
+    color: #0E0E0E;
+}
+
+.total {
+    font-family: 'Smythe';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 24px;
+
+    color: #0E0E0E;
+
+
+}
+
+.remove-button {
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    border: none;
+    color: #BBBBBB;
+    background-color: white;
+}
+
+.complete-div {
+    width: 510px; 
+    margin: 40px auto 40px auto;  
+}
+
+.complete {
+    width: 100%;
+    padding: 18px;
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    color: #FFFFFF;
+    background-color: #16DB99;
+    border: none;
+
+}
