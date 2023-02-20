@@ -26,7 +26,7 @@ document.addEventListener('click', function(e){
         orderSection.style.display = 'block'
         orderConfirmed.style.display = 'none'
     } else if (e.target.dataset.remove) {
-        handleRemoveButton(e.target.dataset.remove)
+        handleRemoveButton(e.target.dataset.remove, e.target.dataset.index)
     } 
     
     
@@ -75,13 +75,14 @@ render()
 
 } 
 
-function handleRemoveButton(itemId) {
+function handleRemoveButton(itemId, index) {
     const itemToRemove = menuArray.filter(function(item) {
         return itemId === item.id.toString()
     })[0]
     
-    const index = orderArray.indexOf(itemToRemove)
     orderArray.splice(index, 1)
+    
+    
     
     total -= itemToRemove.price
     
@@ -99,13 +100,13 @@ function getOrderSection() {
     
     let orderSection = ''
     
-    orderArray.forEach(function(item){
+    orderArray.forEach(function(item, index){
     
         
         orderSection += `
                          <div class="order-list-div">
                                 <h3 class="order-list">${item.name}</h3>
-                                <button class="remove-button" data-remove="${item.id}" >remove</button>
+                                <button class="remove-button" data-remove="${item.id}" data-index="${index}" >remove</button>
                                 <h3 class="item-price" id="item-price">$${item.price}<h3>
                     </div>`
 
